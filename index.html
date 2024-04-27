@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#dinesh-gahlot"
+          ><span class="text-warning">DINESH</span> Gahlot.com</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- img-scroll section -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="project.img/geass-lamperouge.jpg"
+            class="d-block w-100"
+            alt="#pic"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lelouch Lamperouge</h5>
+            <p>
+              You will never be able to love anybody else until you love
+              yourself.
+            </p>
+            <p>
+              <a
+                href="https://en.wikipedia.org/wiki/Lelouch_Lamperouge"
+                class="btn btn-warning mt3"
+                >Learn More</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="project.img/tokyo-ghoul-kaneki.webp"
+            class="d-block w-100"
+            alt="#"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Tokyo Ghoul</h5>
+            <p>How can you destroy a monster without becoming one?</p>
+            <p>
+              <a
+                href="https://en.wikipedia.org/wiki/Tokyo_Ghoul"
+                class="btn btn-warning mt3"
+                >Learn More</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="project.img/uchiha-sasuke.jpg"
+            class="d-block w-100"
+            alt="#"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sasuke Uchiha</h5>
+            <p>
+              People’s lives don’t end when they die. It ends when they lose
+              faith.
+            </p>
+            <p>
+              <a
+                href="https://en.wikipedia.org/wiki/Sasuke_Uchiha"
+                class="btn btn-warning mt3"
+                >Learn More</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- grid gallry section -->
+    <div class="container">
+      <div class="row m-3">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img
+            src="project.img/sung jin woo.jpg"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Boat on Calm Water"
+          />
+
+          <img
+            src="project.img/zoro.jpg"
+            class="w-100 h-25 shadow-1-strong rounded mb-4"
+            alt="Wintry Mountain Landscape"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="project.img/luffy.jpg"
+            class="w-100 h-25 shadow-1-strong rounded mb-4"
+            alt="Mountains in the Clouds"
+          />
+
+          <img
+            src="project.img/ichigo-kurosaki.png"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Boat on Calm Water"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="project.img/sukuna.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Waves at Sea"
+          />
+
+          <img
+            src="project.img/Blue-Flame.jpg"
+            class="w-100 h-25 shadow-1-strong rounded mb-4"
+            alt="Yosemite National Park"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- grid gallry section -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-25">
+          <h4>Testimonial</h4>
+          <p>
+            Anime is a Japanese animation style that is produced or influenced
+            by it. It is the Japanese term for cartoon or animation where the
+            Japanese use the word to describe all cartoons irrespective of the
+            nation. However, outside Japan, anime denotes animation movies that
+            come exclusively from Japan, distinguished by blazing graphics,
+            energetic characters, and attractive themes such as sci-fi, romance,
+            and supernatural forces. Therefore, consider this syllogism: all
+            anime shows are cartoons, but not all cartoons are anime.The art
+            style connected with anime is distinct and easily identifiable.
+            Large eyes, untamed hair, lengthy arms and limbs, and other features
+            are certainly known to you. This exaggerated design allows the
+            characters to convey their emotions more freely, which is plentiful
+            in anime.Technical animation methods like dramatic closeups and
+            zooms, vivid lighting, and brilliant colors contribute to the
+            anime’s emotional atmosphere. However, beyond its unusual visual
+            appearance, anime has endeared itself to viewers; thanks to its
+            nuanced characters and compelling plotlines.Anime has been around
+            for almost a century. The first confirmed example, Namakura Gatana,
+            was released in 1917 and lasted only four minutes. It faced highs
+            and lows as it overcame various hurdles domestically and
+            globally.Various artists have pushed the boundaries and stories told
+            with anime as their preferred choice of medium. The genres that fall
+            under this umbrella are as varied as the art form. Many people in
+            the West have a perception of how anime looks.Artistry and styles
+            appear endless, and artistic expression depends on the artists.
+            However, regardless of the different types, one thing is consistent
+            throughout these productions: the process is
+            time-consuming.Technically, anime is identical to the animation
+            produced in Western culture.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="project.img/overhaul.jpg"
+                  class="d-block w-100"
+                  alt="#"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="project.img/fav-character.jpg"
+                  class="d-block w-100"
+                  alt="#"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="project.img/death note.jpg"
+                  class="d-block w-100"
+                  alt="#"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col" id="aboutImg">
+          <h1 class="text-center" id="about-music">
+            One good thing about music, when it hits you, you feel no pain.Each
+            time you play music, it becomes new.
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <h1 class="text-center mt-3">History Of Anime</h1>
+        <div class="col mt-3">
+          <p>
+            The earliest commercial Japanese animation dates to 1917. A
+            characteristic art style emerged in the 1960s with the works of
+            cartoonist Osamu Tezuka and spread in following decades, developing
+            a large domestic audience. Anime is distributed theatrically,
+            through television broadcasts, directly to home media, and over the
+            Internet. In addition to original works, anime are often adaptations
+            of Japanese comics manga, light novels, or video games. It is
+            classified into numerous genres targeting various broad and niche
+            audiences.Anime is a diverse medium with distinctive production
+            methods that have adapted in response to emergent technologies. It
+            combines graphic art, characterization, cinematography, and other
+            forms of imaginative and individualistic techniques.Compared to
+            Western animation, anime production generally focuses less on
+            movement, and more on the detail of settings and use of "camera
+            effects", such as panning, zooming, and angle shots.Diverse art
+            styles are used, and character proportions and features can be quite
+            varied, with a common characteristic feature being large and emotive
+            eyes.In the 1950s, anime studios began appearing across Japan.
+            Hiroshi Takahata bought a studio named Japan Animated Films in 1948,
+            renaming it Tōei Dōga, with an ambition to become "the Disney of the
+            East." While there, Takahata met other animators such as Yasuji
+            Mori, who directed Doodling Kitty, in May 1957.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="container">
+        <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbole-round">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <div class="image-list">
+            <img src="project.img/ninja.jpg" alt="#" class="image-item" />
+            <img src="project.img/naruto.jpg" alt="#" class="image-item" />
+            <img src="project.img/cave.webp" alt="#" class="image-item" />
+            <img src="project.img/shanks.jpg" alt="#" class="image-item" />
+            <img src="project.img/gojo1.png" alt="#" class="image-item" />
+            <img
+              src="project.img/ichigo-kurosaki.png"
+              alt="#"
+              class="image-item"
+            />
+            <img src="project.img/luffy.jpg" alt="#" class="image-item" />
+            <img
+              src="project.img/roronoa zoro.jpg"
+              alt="#"
+              class="image-item"
+            />
+            <img src="project.img/overhaul.jpg" alt="#" class="image-item" />
+            <img src="project.img/kaidou.jpg" alt="#" class="image-item" />
+          </div>
+          <button id="next-slide" class="slide-button material-symbole-round">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="project.img/itachi-uchiha-naruto.jpg"
+                  class="d-block w-100"
+                  alt="#"
+                />
+              </div>
+            </div>
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-6 h-25">
+          <h4>Itachi Uchiha</h4>
+          <p>
+            "Itachi" redirects here. For weasels in Japanese folklore, see
+            Weasel § Japanese superstitions. Itachi Uchiha is a character in the
+            Naruto manga and anime series created by Masashi Kishimoto. Itachi
+            is the older brother of Sasuke Uchiha, and is responsible for
+            killing all the elder members of their clan, sparing only Sasuke. He
+            appears working as a terrorist from the organisation Akatsuki and
+            serves as Sasuke's greatest enemy.During the second part of the
+            manga, Itachi becomes involved in attacks to ninjas possessing
+            tailed-beast creatures (Jinchuriki) until facing Sasuke in a
+            one-on-one battle. Although Itachi perishes during the final duel,
+            it is later revealed that Itachi had a secret reason for
+            assassinating the Uchiha clan. Itachi is a playable character in
+            most of the video games from the series. Itachi's character has been
+            popular with readers of the manga and has been positively received
+            by critics. He is considered by many to be one of the best
+            characters in the series. His appearance as an antagonist has been
+            praised by several writers, although some have considered his
+            initial appearance to be unsurprising. The gradual revelations of
+            his past and its impact on the story has also received positive
+            reception,and his fights were noted to be "one of the best" in the
+            series.Numerous types of merchandise have been released in Itachi's
+            likeness, including keychains, plush dolls and figurines.When Itachi
+            Uchiha is first mentioned by Sasuke Uchiha in the manga, Masashi
+            Kishimoto had not planned out the character's backstory. His only
+            idea he had was to attribute to Itachi some violent action that
+            would have Sasuke wanting to kill him. However, when Itachi was
+            introduced, Kishimoto had the idea to make Itachi Konoha's secret
+            agent who killed his clan under their orders.Itachi was originally
+            conceived as the leader of Konoha's Special Assassination.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container mt-5">
+        <h3 class="text-center">Osamu Tezuka Laid The Foundations For Many Genres</h3>
+        <p>Osamu Tezuka is by far the most prolific creators in the entire medium. He has brought many conventions that have laid the foundations for many genres from shonen to seinen. His Disney-esque art style is nothing short of iconic, and his writing has captivated creators of all generations.Tezuka has created iconic series such as Astro Boy, a story about a robotic child who deals with themes regarding robotics and humanity. He has also created darker works like Dororo, which dealt with the recovery of a Ronin who regains his body parts by killing demons. Finally, he talked about the concept of immortality with his ambitious work Phoenix.</p>
+    </div>
+    <hr>
+    <div class="container mt-5">
+        <h3 class="text-center">Akira Toriyama Is One Of The Most Recognizable Names In The Industry</h3>
+        <p>Akira Toriyama is one of the most recognizable names in the industry. Thanks to his wonderful work, from Dr. Slump to Dragon Ball, his books have sold millions all over the world. Not only that, but his works have also gotten numerous adaptations from anime and even a few movie works. His art has stuck around in the public subconscious for many decades.A lot of this is thanks to Toriyama's simple yet bold approach to his storytelling and art. While they aren't as complex as what other creators have put out over the years, his charming worlds and recognizable art style have stuck around with fans to this very day. Not only that, but Akira Toriyama has introduced conventions that help influence the shonen industry.</p>
+    </div>
+    <hr>
+    <div class="container mt-5">
+        <h3 class="text-center">Eiichiro Oda Created One Piece</h3>
+        <p>Easily one of the most popular mangakas currently working today, Eiichiro Oda has turned One Piece an iconic series, instantly recognizable worldwide. His cartoony yet heavily detailed art style helped make it recognizable all over the world. His writing and immense worldbuilding have made him legendary to the entire industry.A lot of One Piece's success has to do with Eiichiro Oda's workaholic tendencies since his work output has also made him infamous. Even when he's hospitalized, nothing can stop Oda from making art.</p>
+    </div>
+    <hr>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
